@@ -18,7 +18,7 @@
     {{- end -}}
 
     {{ template "_internal/google_analytics_async.html" . }}
-
+    <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" media="all">
     {{ partial "head_custom" . }}
     {{ partial "head_highlightjs" . }}
 </head>

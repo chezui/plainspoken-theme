@@ -3,20 +3,21 @@ body {
     max-width: 700px;
     line-height: 1.6;
     font-size: 18px;
-    font-family: serif;
+    font-family: "Computer Modern", sans-serif;
     color: #444;
     padding: 0 10px;
     text-align: justify;
 }
 
 pre {
-    font-family: Monaco, monospace;
+    font-family: Monaco, Consolas, monospace;
   }
 
 h1,
 h2,
 h3 {
-    line-height: 1.2
+    line-height: 1.2;
+    font-family: "Computer Modern", sans-serif;
 }
 
 a:visited{
@@ -34,6 +35,8 @@ div.header h1 {
 
 .header-menu {
     float: right;
+    word-spacing: 8px;
+    font-size: 20px;
 }
 
 ul.pagination {
