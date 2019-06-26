@@ -3,21 +3,35 @@ body {
     max-width: 700px;
     line-height: 1.6;
     font-size: 18px;
-    font-family: "Computer Modern", sans-serif;
     color: #444;
     padding: 0 10px;
     text-align: justify;
 }
 
-pre {
+pre, code {
     font-family: Monaco, Consolas, monospace;
+    font-size: 16px;
   }
+body {
+    font-family: serif;
+}
+h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
+    font-family: serif;
+}
 
+/*
+body {
+    font-family: 'Computer Modern Serif', serif;
+}
+h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
+    font-family: 'Computer Modern Sans', sans-serif;
+}
+*/
+  
 h1,
 h2,
 h3 {
     line-height: 1.2;
-    font-family: "Computer Modern", sans-serif;
 }
 
 a:visited{
@@ -36,7 +50,6 @@ div.header h1 {
 .header-menu {
     float: right;
     word-spacing: 8px;
-    font-size: 20px;
 }
 
 ul.pagination {
