@@ -9,7 +9,7 @@ body {
     text-align: justify;
 }
 
-pre{
+pre {
     font-family: Monaco, monospace;
   }
 
@@ -17,6 +17,10 @@ h1,
 h2,
 h3 {
     line-height: 1.2
+}
+
+a:visited{
+    color:blue;
 }
 
 div.header h1 {
@@ -46,7 +50,7 @@ ul.pagination > li {
 div.footer {
     border-top: 1px solid;
     text-align: center;
-    padding-top: 10x;
+    padding-top: 8px;
 }
 
 img {
