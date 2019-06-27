@@ -46,6 +46,9 @@ time {
     blockquote {
         margin: 0 10px;
     }
+    li {
+        margin-right: 10px;
+    }
 }    
 
 @supports (display: grid) {
