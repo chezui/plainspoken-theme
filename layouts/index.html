@@ -1,12 +1,16 @@
 {{ define "main" }}
+    <main aria-role="main">
+      <div class="homepage-content">
+        <!-- Note that the content for index.html, as a sort of list page, will pull from content/_index.md -->
+        {{.Content}}
+      </div>
+      <div>
+        <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
+        {{ $paginator := .Paginate (.Pages.ByLastmod.Reverse) 3 }}
 
-<header>
-    <h1>
-        {{- .Title | markdownify -}}
-    </h1>
-</header>
-<article>
-    {{ .Content }}
-</article>
-
+        {{ range where .Site.Pages "Section" "blog" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a><br /><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span></li>
+        {{ end }}>
+      </div>
+    </main>
 {{ end }}

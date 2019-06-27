@@ -73,6 +73,15 @@ time {
     display: table-cell;
   }
 
+table {
+    margin: 18px; 
+    border-top: 1px solid #666; 
+    border-bottom: 1px solid #666; 
+ }
+ table thead th { border-bottom: 1px solid #ddd; }
+ th, td { padding: 7px; font-size: 14px;}
+ tr:nth-child(even) { background: #eee; }
+
 /*
 body {
     font-family: 'Computer Modern Serif', serif;
