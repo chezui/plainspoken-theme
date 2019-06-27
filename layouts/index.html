@@ -6,11 +6,14 @@
       </div>
       <div>
         <!-- Note that .Pages is the same as .Site.RegularPages on the homepage template. -->
-        {{ $paginator := .Paginate (.Pages.ByLastmod.Reverse) 3 }}
-
-        {{ range where .Site.Pages "Section" "blog" }}
-        <li><a href="{{ .Permalink }}">{{ .Title }}</a><br /><span class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</span></li>
-        {{ end }}>
+        <h3>recent posts</h3>
+        {{ range first 5 (where .Pages "Section" "post")}}
+        <li style="list-style-type:none;margin: 1.0em 0;">
+           <b><a href="{{ .Permalink }}">{{ .Title }}</a></b> - <span class="date">{{ .Date.Format "January 2, 2006" }}</span>
+            </br>
+           <div style="margin-left: 20px; margin-top: 10px">{{ .Description | markdownify }}</div>
+        </li>
+        {{ end }}
       </div>
     </main>
 {{ end }}

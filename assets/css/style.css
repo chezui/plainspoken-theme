@@ -30,6 +30,10 @@ time {
     font-style: italic;
 }
 
+.nowbox {
+    border: 1px;
+}
+
 @supports (display: grid) {
     .ichi {
         display: grid;
