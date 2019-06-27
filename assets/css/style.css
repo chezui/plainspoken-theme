@@ -12,12 +12,66 @@ pre, code {
     font-family: Monaco, Consolas, monospace;
     font-size: 14px;
   }
+
 body {
     font-family: serif;
 }
+
 h1, h2, h3, h4, h5, h6, .nav, .article-duration, .archive-item-link, .footer {
     font-family: serif;
 }
+
+blockquote {
+    font-style: italic;
+    font-size: 19px;
+}
+
+time {
+    font-style: italic;
+}
+
+@supports (display: grid) {
+    .ichi {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 300px;
+    }
+
+    .words {
+        text-align: justify;
+        display: grid;
+    }
+
+    .profile {
+        align-self: center;
+        float: right;
+    }
+}
+
+.contact_list {
+    line-height: 1;
+    padding-top: 0cm
+  }
+
+  .container form {
+    display: table;
+  }
+
+  .container p {
+    display: table-row;
+  }
+
+  .container label {
+    display: table-cell;
+  }
+
+  .container input {
+    display: table-cell;
+  }
+
+  .container textarea {
+    display: table-cell;
+  }
 
 /*
 body {
