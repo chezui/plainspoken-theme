@@ -33,6 +33,11 @@ time {
 .nowbox {
     border: 1px;
 }
+@media screen and (max-width: 480px) {
+    p {
+    text-align: left !important;
+    }
+}    
 
 @supports (display: grid) {
     .ichi {
