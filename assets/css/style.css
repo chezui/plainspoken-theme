@@ -34,8 +34,15 @@ time {
     border: 1px;
 }
 @media screen and (max-width: 480px) {
-    p {
-    text-align: left !important;
+    p, body {
+        text-align: justify !important;
+        padding: 0 10px;
+    }
+    h1 {
+        font-size: 20px
+    }
+    h2, h3, h4, h5, h6 {
+        font-size: 18px
     }
 }    
 
