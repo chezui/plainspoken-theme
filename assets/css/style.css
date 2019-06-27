@@ -35,7 +35,6 @@ time {
 }
 @media screen and (max-width: 480px) {
     p, body {
-        text-align: justify !important;
         padding: 0 10px;
     }
     h1 {
