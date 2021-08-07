@@ -16,9 +16,7 @@
         {{- $styles.Content | safeCSS -}}
     </style>
 
-    {{- if .RSSLink }}
-    <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-    {{- end -}}
+    {{ .Hugo.Generator }}
 
     {{ template "_internal/google_analytics_async.html" . }}
     <link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" media="all">
