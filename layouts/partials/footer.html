@@ -20,6 +20,8 @@
     </div>
     {{ end }}
     {{ partial "footer_highlightjs" . }}
-    {{ partial "footer_mathjax" . }}
+    {{ if or .Params.math .Site.Params.math }}
+        {{ partial "footer_math.html" . }}
+    {{ end }}
 </div>
 {{ end }}
